@@ -16,9 +16,7 @@ class DashboardController extends Controller
     public function logout(){
         Auth::logout();
     }
-    public function test(){
-        return view('admin.home.blog');
-    }
+   
 }
 
 

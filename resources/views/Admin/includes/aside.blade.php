@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="{{url('/dashboard')}}" class="brand-link">
     
-      <span class="brand-text font-weight-light">M.A Trading Software</span>
+      <span class="brand-text font-weight-light">E Health Care</span>
      
     </a>
 
@@ -33,80 +33,58 @@
             </a>
             <ul class="nav nav-treeview  "  >
              <li class="nav-item ">
-                <a href="{{route('test')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="far fa-money-bill-alt"></i>
-                  <p>Test</p>                
+                <a href="{{route('company')}}" class="nav-link">
+                  &nbsp;&nbsp;
+                  <p>Company</p>                
                 </a>
             </li>
-{{-- if(session()->has('ID')) --}}
-            @if(Session::get("role")==1)
+
             <li class="nav-item">
-                <a href="{{url('/summary')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fab fa-blackberry"></i>
-                  <p>Summary</p>                
+                <a href="{{url('/slider')}}" class="nav-link">
+                  &nbsp;&nbsp;
+                  <p>Slider</p>                
                 </a>
             </li>
-             <li class="nav-item">
-                <a href="{{url('/user')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="far fa-user nav-icon"></i>
-                  <p>Admin User</p>
-                  
-                </a>
-              </li>
-            @else
-
-            @endif
-
-              <li class="nav-item">
-                <a href="{{url('/expense')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="far fa-arrow-alt-circle-right"></i>
-                  <p>Business Expense</p>
-                  
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{url('/fexpense')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="far fa-arrow-alt-circle-right"></i>
-                  <p>Family Expense</p>
-                  
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{{url('/bank')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fas fa-university"></i>
-                  <p>Bank Withdraw</p>                 
-                </a>
-              </li>
-                <li class="nav-item">
-                <a href="{{url('/reports')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fas fa-file-invoice"></i>
-                  <p>Report</p>                 
-                </a>
-              </li>
+            <li class="nav-item">
+              <a href="{{url('/mission')}}" class="nav-link">
+                &nbsp;&nbsp;
+                <p>Mission & Quota</p>                
+              </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/blogs')}}" class="nav-link">
+              &nbsp;&nbsp;
+              <p>Blogs</p>                
+            </a>
+        </li>
             </ul>
           </li>
             <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="fas fa-share-alt"></i>
               <p>
-               Share Management
+               Test & Doctor
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
 
                <li class="nav-item">
-                <a href="{{url('/share')}}" class="nav-link">
+                <a href="{{url('/test_category')}}" class="nav-link">
                   &nbsp;&nbsp;<i class="fas fa-user-tag"></i>
-                  <p>Share Holder</p>
-                  
+                  <p>Test Category</p>                  
                 </a>
               </li>
                 <li class="nav-item">
-                <a href="{{url('/sharebalance')}}" class="nav-link">
+                <a href="{{url('/test')}}" class="nav-link">
                   &nbsp;&nbsp;<i class="fas fa-share-square"></i>
-                  <p>Share Balance</p>
-                  
+                  <p>Test</p>                  
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('/doctors')}}" class="nav-link">
+                  &nbsp;&nbsp;<i class="fas fa-share-square"></i>
+                  <p>Doctors</p>                 
                 </a>
               </li>
             </ul>
@@ -115,39 +93,21 @@
             <a href="#" class="nav-link">
               <i class="fas fa-shopping-basket"></i>
               <p>
-                 Buy Management
+                 Service
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{url('/member')}}" class="nav-link">
+                <a href="{{url('/service')}}" class="nav-link">
                   &nbsp;&nbsp;<i class="fas fa-user-friends"></i>
-                  <p>MemberShip</p>
-                </a>
-              </li>
-               <li class="nav-item">
-                <a href="{{url('/buyproduct')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fab fa-buy-n-large"></i>
-                  <p>Buy Product</p>
-                </a>
-              </li>
-               <li class="nav-item">
-                <a href="{{url('/payment')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fas fa-money-bill-alt"></i>
-                  <p>Payment Histroy</p>
+                  <p>Service</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('/payment_report')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fas fa-file-invoice"></i>
-                  <p>Payment Report</p>
-                </a>
-              </li>
-                <li class="nav-item">
-                <a href="{{url('/statement')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fas fa-book"></i>
-                  <p>Statement</p>
+                <a href="{{url('/banner')}}" class="nav-link">
+                  &nbsp;&nbsp;<i class="fas fa-user-friends"></i>
+                  <p>Banner</p>
                 </a>
               </li>
             </ul>
@@ -156,44 +116,30 @@
             <a href="#" class="nav-link">
               <i class="fas fa-balance-scale-right"></i>
               <p>
-              Sale Management
+              Contact Info 
              
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
                 <li class="nav-item">
-                <a href="{{url('/supplier')}}" class="nav-link">
+                <a href="{{url('/contact')}}" class="nav-link">
                   &nbsp;&nbsp;<i class="fas fa-users"></i>
-                  <p>Supplier</p>
+                  <p>Contact Us</p>
                   
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('/sale')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fas fa-cart-arrow-down"></i>
-                  <p>Sale </p>
-                  
-                </a>
-              </li>
-               <li class="nav-item">
-                <a href="{{url('/recive_history')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fas fa-money-check-alt"></i>
-                  <p>Recive Payment </p>
-                  
-                </a>
-              </li>
-               <li class="nav-item">
-                <a href="{{url('/transaction')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fas fa-american-sign-language-interpreting"></i>
-                  <p>Transaction</p>
+                <a href="{{url('/appointlist')}}" class="nav-link">
+                  &nbsp;&nbsp;<i class="fas fa-database"></i> 
+                  <p>Appoinment List</p>
                   
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('/state')}}" class="nav-link">
-                  &nbsp;&nbsp;<i class="fas fa-book"></i>
-                  <p>Statement</p>
+                <a href="{{url('/testppointlist')}}" class="nav-link">
+                  &nbsp;&nbsp;<i class="fas fa-database"></i> 
+                  <p>Test Appoinment</p>
                   
                 </a>
               </li>

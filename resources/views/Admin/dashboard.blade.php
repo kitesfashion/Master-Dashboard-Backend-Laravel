@@ -2,7 +2,7 @@
 
 @section('title')
 
-Dashboard || M.A Trading
+Dashboard
 @endsection
 @section('content')
 

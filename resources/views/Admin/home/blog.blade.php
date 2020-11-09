@@ -1,5 +1,4 @@
 @extends('admin.master')
-
 @section('content')
 <div class="page-content fade-in-up">
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"

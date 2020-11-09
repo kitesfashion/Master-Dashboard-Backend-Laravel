@@ -7,7 +7,6 @@
 
     <link rel="icon" style="border-radius:50%" href="{{asset('/img/favi.png')}}" type="image/gif" sizes="16x16">
   
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{asset('/admin/plugins/fontawesome-free/css/all.min.css')}}">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -20,6 +19,9 @@
   <link rel="stylesheet" href="{{asset('/admin/plugins/summernote/summernote-bs4.css')}}">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="{{asset('/admin/plugins/datatables-bs4/css/dataTables.bootstrap4.css')}}">
+
+
+
 
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -38,7 +40,7 @@
     <strong>Copyright &copy; <?php echo  date("Y "); ?><a href="">NEBL</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-      <span>Developed By</span> <a href="https://www.facebook.com/profile.php?id=100007457478944">LS Soft</a>
+      <span>Developed By</span> <a href="https://www.neblbd.com">NEBL IT</a>
     </div>
   </footer>
 
@@ -131,6 +133,7 @@ aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 </script>
 <script>
   new FroalaEditor('textarea#froala-editor')
+  
 </script>
 </body>
 </html>
